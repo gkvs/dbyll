@@ -1,14 +1,15 @@
 ---
 layout: post
 title: GKVS java client
-categories: [api, java]
-tags: [gkvs, java]
+categories: [api, java, grpc, protobuf]
+tags: [gkvs, java, grpc, protobuf]
 fullview: true
 comments: true
 ---
 
-Java client works throught GPRC and supports auto-balancing.
+Java client works throught **GRPC** and supports auto-balancing.
 Performance: 10000 get random requests in 4622 milliseconds.
+It compiled with all shadow libs to avoid any jar conflicts on applications side.
 
 Java API
 {% highlight java %}
@@ -24,3 +25,7 @@ boolean updated = GKVS.Client.put("TEST", "key", "replace_value").compareAndPut(
 
 boolean exists = GKVS.Client.exists("TEST", "key").sync().exists();
 {% endhighlight %}
+
+### GKVS Java is on GitHub
+
+<a class="btn btn-default" href="https://github.com/gkvs/gkvs-java">Grab your copy now!</a>
