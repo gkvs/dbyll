@@ -1,0 +1,26 @@
+---
+layout: post
+title: GKVS java client
+categories: [api, java]
+tags: [gkvs, java]
+fullview: true
+comments: true
+---
+
+Java client works throught GPRC and supports auto-balancing.
+Performance: 10000 get random requests in 4622 milliseconds.
+
+Java API
+{% highlight java %}
+byte[] value = GKVS.Client.get("TEST", "key").sync().value();
+
+GKVS.Client.put("TEST", "key", "value").sync();
+
+GKVS.Client.remove("TEST", "key").sync();
+
+// compare and set
+Record record = GKVS.Client.get("TEST", "key").sync();
+boolean updated = GKVS.Client.put("TEST", "key", "replace_value").compareAndPut(record.version()).sync();
+
+boolean exists = GKVS.Client.exists("TEST", "key").sync().exists();
+{% endhighlight %}
