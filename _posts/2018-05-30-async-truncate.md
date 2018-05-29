@@ -7,7 +7,7 @@ fullview: true
 comments: true
 ---
 
-There is an async was to truncate table by scanning all record and sending all keys to remove.
+There is an async way to truncate table by scanning all record and sending all keys to remove all operation.
 
 {% highlight java %}
 Observer<Key> key = Gkvs.Client.removeAll().async(Observers.<Status>console(done));				
