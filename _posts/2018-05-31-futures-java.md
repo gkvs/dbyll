@@ -10,7 +10,7 @@ comments: true
 Future is the class in JDK that gives ability to get result somehow in the future. 
 During the interval application can perform another task that how parallelism can give immediate benefit without deep refactoring of application.
 
-Here is the example of the GET with futures:
+Here is the example of GET operation with future:
 {% highlight java %}
 GkvsFuture<Record> future = Gkvs.Client.get(KEY).async();
 // do something else
