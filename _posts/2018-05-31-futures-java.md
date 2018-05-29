@@ -24,7 +24,7 @@ GkvsFuture<Iterable<Record>> records = Gkvs.Client.multiGet(LOAD_KEYS).async();
 // do something else
 
 for (Record rec : records.getUnchecked()) {
-		System.out.println(rec.key().get());
+  System.out.println(rec.key().get());
 }
 {% endhighlight %}
 
@@ -39,10 +39,10 @@ GkvsFuture<Record> future = Gkvs.Client.get(KEY).async();
 
 future.addListener(new Runnable() {
 
-	@Override
-	public void run() {
-			triggered.set(true);
-	}
+  @Override
+  public void run() {
+    triggered.set(true);
+  }
 			
 });
 {% endhighlight %}
