@@ -8,7 +8,7 @@ comments: true
 ---
 
 Future is the class in JDK that gives ability to get result somehow in the future. 
-During the interval application can perform another task that how parallelism can give immediate benifit without deep refactoring of the application.
+During the interval application can perform another task that how parallelism can give immediate benefit without deep refactoring of application.
 
 Here is the example of the GET with futures:
 {% highlight java %}
