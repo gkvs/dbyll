@@ -45,4 +45,5 @@ future.addListener(new Runnable() {
   }
 			
 });
+Record rec = future.getUnchecked();
 {% endhighlight %}
