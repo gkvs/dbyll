@@ -16,7 +16,7 @@ defaults:
     values:
       title: gkvs
 
-description: gkvs
+description: Generic Key-Value Storage
 author:
   name: gkvs
   email: alex@gkvs.rocks
