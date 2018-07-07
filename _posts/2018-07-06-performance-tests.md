@@ -19,6 +19,11 @@ Aerospike
 30000 requests in 9820 milliseconds, 0.3273333333333333
 {% endhighlight %}
 
+RocksDB 
+{% highlight ruby %}
+30000 requests in 7446 milliseconds, 0.2482
+{% endhighlight %}
+
 Performance test code
 {% highlight java %}
 		long t0 = System.currentTimeMillis();
