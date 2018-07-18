@@ -25,14 +25,14 @@ author:
   pinterest: gkvs
   linkedin: gkvs
   bio: gkvs
-  email_md5: 726351295ec82e145928582f595aa3aa
+  email_md5: 75b2c5191f304734f8f09c4b10a7f40e
 
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
 # set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
 
 BASE_PATH:
 
