@@ -41,3 +41,5 @@ add_table("test", "redis1", { ttl = 100 } );
 
 add_view("TEST", { cluster="redis1", table="test" } );
 {% endhighlight %}
+
+Only *views* are visible for the client. So, in this case we always can *redirect* view to another table runtime.
